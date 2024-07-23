@@ -84,3 +84,19 @@ Add `bundle_type` and `products_in_bundle` fields to the Product table in databa
     - No changes required. 
     11. User management:
     - No changes required. 
+6. **Tests:**
+    1. Integration Tests:
+        - Backend: Design integration tests for the following schenarios and them to the CI/CD pipeline.
+            - create a bundle
+            - update a bundle 
+            - delete a bundle
+            - checkout a bundle
+            - after sale (checkout) --> must do *post sale process* for products in a bundle (for example generating License Keys)
+        - Frontend: Design tests for the following:
+            - create a bundle
+            - update a bundle
+            - delete a bundle
+            - show a bundle product page --> must show all the products in the bundle
+            - checkout --> show bundle in checkout            
+        - End to End: Design end-to-end tests in the staging/test environment and add them to the CI/CD pipeline
+            - all the mentioned functionalities should be tested end to end
