@@ -22,7 +22,7 @@ We at Gumroad want to let creators bundle their products and sell the bundle.
     5. Creators will be able to include 1 quantity of each product in a bundle. 
 
 #### High Level Solution:
-Store `Bundles` in `Product` table and `Distingiush` them with a type named `bundle_type` and keep track of what records are in a bundle.
+Store `Bundles` in `Product` table and `Distingiush` them with a type named `bundle_type` and keep track of what products a bundle has. 
     
 ### Idea: 
 We will represent the `Bundle` concept as `Products` but we will distinguish them from `not_bundled` products. We will also record what products are in this bundle. 
